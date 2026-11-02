@@ -1,0 +1,149 @@
+.nim-enc-shell {
+  position: relative;
+  display: inline-block;
+}
+
+.nim-enc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 6px;
+  border: 1px solid var(--nim-border);
+  border-radius: 4px;
+  background: var(--nim-bg-tertiary);
+  color: var(--nim-text-muted);
+  font-size: 0.9em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nim-enc-chip:hover,
+.nim-enc-chip-open {
+  background: var(--nim-bg-hover);
+  color: var(--nim-text);
+  border-color: var(--nim-primary);
+}
+
+.nim-enc-chip-pending {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.nim-enc-popover {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 240px;
+  padding: 8px;
+  border: 1px solid var(--nim-border);
+  border-radius: 6px;
+  background: var(--nim-bg-secondary);
+  color: var(--nim-text);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.nim-enc-value {
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: var(--nim-bg);
+  font-family: var(--nim-font-mono, monospace);
+  white-space: pre-wrap;
+  word-break: break-all;
+  user-select: text;
+}
+
+.nim-enc-status {
+  font-size: 0.8em;
+  color: var(--nim-text-muted);
+}
+
+.nim-enc-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.nim-enc-button {
+  padding: 2px 10px;
+  border: 1px solid var(--nim-border);
+  border-radius: 4px;
+  background: var(--nim-bg);
+  color: var(--nim-text);
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+.nim-enc-button:hover {
+  background: var(--nim-bg-hover);
+}
+
+.nim-enc-button-primary {
+  border-color: var(--nim-primary);
+  background: var(--nim-primary);
+  color: #fff;
+}
+
+.nim-enc-button-danger {
+  color: #e5484d;
+}
+
+/* Modal (appended to document.body) */
+.nim-enc-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.nim-enc-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 340px;
+  padding: 16px;
+  border: 1px solid var(--nim-border);
+  border-radius: 8px;
+  background: var(--nim-bg-secondary);
+  color: var(--nim-text);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.nim-enc-dialog-title {
+  font-weight: 600;
+}
+
+.nim-enc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85em;
+  color: var(--nim-text-muted);
+}
+
+.nim-enc-field input {
+  padding: 6px 8px;
+  border: 1px solid var(--nim-border);
+  border-radius: 4px;
+  background: var(--nim-bg);
+  color: var(--nim-text);
+  font-size: 1.1em;
+}
+
+.nim-enc-field input:focus {
+  outline: none;
+  border-color: var(--nim-primary);
+}
+
+.nim-enc-error {
+  min-height: 1em;
+  font-size: 0.85em;
+  color: #e5484d;
+}

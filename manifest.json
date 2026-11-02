@@ -1,0 +1,36 @@
+{
+  "id": "com.nimbalyst.inline-encrypter",
+  "name": "Inline Encrypter",
+  "version": "0.1.0",
+  "description": "Encrypt passwords and secrets inline in wiki/markdown pages with a passphrase (AES-256-GCM). Files only ever contain ciphertext.",
+  "main": "dist/index.js",
+  "styles": "dist/index.css",
+  "apiVersion": "1.0.0",
+  "permissions": {
+    "filesystem": false,
+    "ai": true
+  },
+  "contributions": {
+    "transformers": ["ENCRYPTED_INLINE_TRANSFORMER"],
+    "lexicalExtensions": ["EncryptedLexicalExtension"],
+    "slashCommands": [
+      {
+        "id": "com.nimbalyst.inline-encrypter.secret",
+        "title": "Encrypt secret",
+        "description": "Insert a passphrase-encrypted secret (password, API key)",
+        "icon": "lock",
+        "keywords": ["encrypt", "password", "secret", "lock", "비밀번호", "암호", "비밀"],
+        "handler": "insertEncryptedSecret"
+      },
+      {
+        "id": "com.nimbalyst.inline-encrypter.lock",
+        "title": "Lock secrets",
+        "description": "Forget the cached passphrase now",
+        "icon": "lock_reset",
+        "keywords": ["lock", "encrypt", "잠금"],
+        "handler": "lockSecrets"
+      }
+    ],
+    "aiTools": ["inline_encrypter.encrypt"]
+  }
+}
