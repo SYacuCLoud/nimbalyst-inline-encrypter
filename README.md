@@ -11,7 +11,7 @@ Obsidian의 [Inline Encrypter](https://community.obsidian.md/plugins/inline-encr
 | 동작 | 방법 |
 |---|---|
 | 새 비밀 넣기 | `/Encrypt secret` → 값 입력 → (처음이면) passphrase 두 번 입력 |
-| 선택한 텍스트 암호화 | 텍스트 선택 후 **Ctrl+Shift+E** |
+| 선택한 텍스트 암호화 | 텍스트 선택 후 **Ctrl+Shift+E** 또는 떠 있는 서식 툴바의 🔒 버튼 |
 | 보기 / 복사 | 🔒 칩 클릭 → 보기 · 복사 (30초 뒤 클립보드 자동 비움) |
 | 값 수정 | 칩 열기 → 수정 |
 | 암호화 해제 | 칩 열기 → 해제 (확인 후 평문으로 되돌림) |
