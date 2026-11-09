@@ -78,7 +78,7 @@ function registerToolbarButton(editor: LexicalEditor): () => void {
 }
 
 export const EncryptedLexicalExtension = defineExtension({
-  name: '@nimbalyst/extensions/inline-encrypter',
+  name: '@syacucloud/inline-encrypter',
   nodes: [EncryptedInlineNode],
   register: (editor) => {
     const removeTransform = editor.registerNodeTransform(TextNode, $convertCodeToken);

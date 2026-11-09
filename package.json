@@ -1,6 +1,7 @@
 {
-  "name": "com.nimbalyst.inline-encrypter",
+  "name": "com.syacucloud.inline-encrypter",
   "version": "0.1.0",
+  "author": "SYacuCLoud",
   "private": true,
   "type": "module",
   "scripts": {

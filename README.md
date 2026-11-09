@@ -20,7 +20,7 @@ Windows 기준입니다. Node.js 20 LTS 이상이 필요합니다.
    npm install
    npm run build
    ```
-2. `manifest.json`과 `dist/`를 `%APPDATA%\@nimbalyst\electron\extensions\com.nimbalyst.inline-encrypter\`에 복사합니다.
+2. `manifest.json`과 `dist/`를 `%APPDATA%\@nimbalyst\electron\extensions\com.syacucloud.inline-encrypter\`에 복사합니다.
 3. Nimbalyst를 다시 시작합니다.
 
 Nimbalyst **Settings > Advanced > Extension Dev Tools**를 켰다면 2~3 대신 `extension_build` / `extension_install`을 써도 됩니다.

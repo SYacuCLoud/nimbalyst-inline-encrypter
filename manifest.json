@@ -1,8 +1,9 @@
 {
-  "id": "com.nimbalyst.inline-encrypter",
+  "id": "com.syacucloud.inline-encrypter",
   "name": "Inline Encrypter",
   "version": "0.1.0",
   "description": "Encrypt passwords and secrets inline in wiki/markdown pages with a passphrase (AES-256-GCM). Files only ever contain ciphertext.",
+  "author": "SYacuCLoud",
   "main": "dist/index.js",
   "styles": "dist/index.css",
   "apiVersion": "1.0.0",
@@ -15,7 +16,7 @@
     "lexicalExtensions": ["EncryptedLexicalExtension"],
     "slashCommands": [
       {
-        "id": "com.nimbalyst.inline-encrypter.secret",
+        "id": "com.syacucloud.inline-encrypter.secret",
         "title": "Encrypt secret",
         "description": "Insert a passphrase-encrypted secret (password, API key)",
         "icon": "lock",
@@ -23,7 +24,7 @@
         "handler": "insertEncryptedSecret"
       },
       {
-        "id": "com.nimbalyst.inline-encrypter.lock",
+        "id": "com.syacucloud.inline-encrypter.lock",
         "title": "Lock secrets",
         "description": "Forget the cached passphrase now",
         "icon": "lock_reset",
